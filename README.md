@@ -1,28 +1,27 @@
-# 🛡️ Fraud Detection System
+# 🛡️ Financial Fraud Detection System
 
-A machine learning project that detects fraudulent financial transactions using Python and Scikit-learn. This project demonstrates an end-to-end machine learning workflow, including data preprocessing, model training, evaluation, and deployment-ready model serialization.
+An end-to-end machine learning project for detecting fraudulent financial transactions using Python and Scikit-learn. This project demonstrates the complete machine learning workflow, from data preprocessing and exploratory data analysis (EDA) to model training, evaluation, and model deployment.
 
 ---
 
 ## 📌 Project Overview
 
-Fraud detection is a critical application of machine learning in the financial industry. The goal of this project is to build a classification model capable of distinguishing between legitimate and fraudulent transactions based on historical transaction data.
+Financial fraud poses significant challenges for banks and payment systems worldwide. This project leverages machine learning techniques to classify transactions as either legitimate or fraudulent based on historical transaction data.
 
-The project covers the complete machine learning pipeline from raw data to a trained model that can be reused for future predictions.
+The project includes data visualization, feature engineering, model training, evaluation, and serialization of the trained model for future predictions.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-- Data preprocessing and cleaning
-- Feature selection and preparation
-- Train/Test split
-- Machine Learning classification model
-- Model performance evaluation
-- Confusion Matrix
-- Classification Report
-- Model serialization using Joblib
-- Reusable prediction pipeline
+- 📊 Exploratory Data Analysis (EDA)
+- 🧹 Data preprocessing and cleaning
+- ⚙️ Feature engineering
+- 🤖 Machine Learning classification model
+- 📈 Model evaluation using multiple metrics
+- 📉 Confusion Matrix
+- 💾 Saved trained model using Joblib
+- 🔄 Reusable prediction pipeline
 
 ---
 
@@ -31,6 +30,7 @@ The project covers the complete machine learning pipeline from raw data to a tra
 - Python
 - Pandas
 - NumPy
+- Matplotlib
 - Scikit-learn
 - Joblib
 - Jupyter Notebook
@@ -40,39 +40,19 @@ The project covers the complete machine learning pipeline from raw data to a tra
 
 ## 📂 Project Structure
 
-```
-Fraud_Detection_Project/
+```text
+financial-fraud-detection-model/
 │
-├── analysis_model.ipynb          # Complete model development notebook
-├── fraud_detection.py            # Python implementation
-├── fraud_detection_pipeline.pkl  # Saved trained model
-├── README.md
+├── analysis_model.ipynb
+├── fraud_detection.py
+├── fraud_detection_pipeline.pkl
+├── images/
+│   ├── Distribution of Transaction Amounts.jpeg
+│   ├── Fraudulent Transactions Over Time.jpeg
+│   ├── Correlation Matrix.jpeg
+│   └── README.md
+└── README.md
 ```
-
----
-
-## 📊 Model Performance
-
-The trained model achieved:
-
-- **Accuracy:** 94.32%
-- Precision, Recall, and F1-Score evaluated using the classification report
-- Performance visualized using a confusion matrix
-
-> Since fraud detection datasets are highly imbalanced, evaluation metrics beyond accuracy (such as Precision, Recall, and F1-score) were also considered.
-
----
-
-## ⚙️ Machine Learning Workflow
-
-1. Import dataset
-2. Data preprocessing
-3. Feature engineering
-4. Split data into training and testing sets
-5. Train classification model
-6. Evaluate model performance
-7. Save trained pipeline using Joblib
-8. Load model for future predictions
 
 ---
 
@@ -80,44 +60,74 @@ The trained model achieved:
 
 ### Distribution of Transaction Amounts
 
-This histogram illustrates the distribution of transaction amounts on a logarithmic scale, making it easier to observe patterns across transactions of varying magnitudes.
+This histogram illustrates the distribution of transaction amounts using a logarithmic scale, making it easier to observe transaction behavior across different value ranges.
 
-![Distribution of Transaction Amounts](Distribution%20of%20Transaction%20Amounts.jpeg)
+![Distribution of Transaction Amounts](images/Distribution%20of%20Transaction%20Amounts.jpeg)
 
 ---
 
 ### Fraudulent Transactions Over Time
 
-This visualization shows the occurrence of fraudulent transactions across different time intervals, helping identify trends and fluctuations in fraudulent activity.
+This visualization displays the frequency of fraudulent transactions over time, providing insights into patterns and fluctuations in fraudulent activity.
 
-![Fraudulent Transactions Over Time](Fraudulent%20Transactions%20Over%20Time.jpeg)
+![Fraudulent Transactions Over Time](images/Fraudulent%20Transactions%20Over%20Time.jpeg)
 
 ---
 
 ### Correlation Matrix
 
-The correlation heatmap displays the relationships between numerical features, providing insight into feature dependencies and potential predictors of fraudulent transactions.
+The correlation heatmap highlights relationships between numerical features, helping identify feature dependencies and potential predictors of fraudulent transactions.
 
-![Correlation Matrix](Correlation%20Matrix.jpeg)
+![Correlation Matrix](images/Correlation%20Matrix.jpeg)
 
-## 💻 Installation
+---
+
+## 📈 Model Performance
+
+The trained model achieved:
+
+- **Accuracy:** **94.32%**
+- Classification Report
+- Confusion Matrix
+- Precision
+- Recall
+- F1-Score
+
+> Since fraud detection datasets are highly imbalanced, evaluation metrics beyond accuracy are important for assessing real-world model performance.
+
+---
+
+## ⚙️ Machine Learning Workflow
+
+1. Import and explore the dataset
+2. Perform data preprocessing
+3. Conduct exploratory data analysis (EDA)
+4. Engineer relevant features
+5. Split the dataset into training and testing sets
+6. Train the machine learning model
+7. Evaluate performance
+8. Save the trained pipeline using Joblib
+
+---
+
+## 🚀 Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/fraud-detection-project.git
+git clone https://github.com/maliksubhanameerali/financial-fraud-detection-model.git
 ```
 
-Navigate to the project:
+Navigate into the project directory:
 
 ```bash
-cd fraud-detection-project
+cd financial-fraud-detection-model
 ```
 
-Install dependencies:
+Install the required libraries:
 
 ```bash
-pip install pandas numpy scikit-learn joblib jupyter
+pip install pandas numpy matplotlib scikit-learn joblib jupyter
 ```
 
 Run the notebook:
@@ -128,40 +138,41 @@ jupyter notebook
 
 ---
 
-## 📈 Future Improvements
+## 🔮 Future Improvements
 
 - Hyperparameter tuning
 - Cross-validation
-- ROC-AUC evaluation
-- Feature importance analysis
-- Interactive dashboard using Streamlit
-- Real-time fraud prediction API
+- ROC-AUC analysis
+- Precision-Recall Curve
+- Feature importance visualization
+- Streamlit web application
+- REST API deployment
+- Real-time fraud prediction
 
 ---
 
-## 🎯 Learning Outcomes
+## 📚 Learning Outcomes
 
-Through this project, I gained practical experience in:
+This project strengthened my understanding of:
 
 - Data preprocessing
+- Exploratory Data Analysis (EDA)
 - Machine Learning pipelines
-- Model evaluation
 - Classification algorithms
-- Model persistence
-- Python for data science
-- End-to-end ML project development
+- Model evaluation
+- Data visualization
+- Model serialization with Joblib
+- End-to-end machine learning development
 
 ---
 
 ## 👨‍💻 Author
 
-**Malik Subhan Ameer Ali**
+**Subhan Malik**
 
-Aspiring AI & Machine Learning Engineer with a strong interest in building practical, data-driven solutions using Python and machine learning.
+Aspiring AI & Machine Learning Engineer passionate about building intelligent, data-driven solutions using Python and machine learning.
 
-- GitHub: https://github.com/maliksubhanameerali
-- LinkedIn: https://linkedin.com/in/malik-subhan-ameer-ali-3b0061416
+- **GitHub:** https://github.com/maliksubhanameerali
+- **LinkedIn:** https://www.linkedin.com/in/malik-subhan-ameer-ali-3b0061416
 
 ---
-
-## ⭐ If you found this project useful, consider giving it a star!
