@@ -76,6 +76,30 @@ The trained model achieved:
 
 ---
 
+## 📊 Visualizations
+
+### Distribution of Transaction Amounts
+
+This histogram illustrates the distribution of transaction amounts on a logarithmic scale, making it easier to observe patterns across transactions of varying magnitudes.
+
+![Distribution of Transaction Amounts](Distribution%20of%20Transaction%20Amounts.jpeg)
+
+---
+
+### Fraudulent Transactions Over Time
+
+This visualization shows the occurrence of fraudulent transactions across different time intervals, helping identify trends and fluctuations in fraudulent activity.
+
+![Fraudulent Transactions Over Time](Fraudulent%20Transactions%20Over%20Time.jpeg)
+
+---
+
+### Correlation Matrix
+
+The correlation heatmap displays the relationships between numerical features, providing insight into feature dependencies and potential predictors of fraudulent transactions.
+
+![Correlation Matrix](Correlation%20Matrix.jpeg)
+
 ## 💻 Installation
 
 Clone the repository:
